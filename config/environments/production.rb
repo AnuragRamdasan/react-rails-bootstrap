@@ -79,4 +79,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # React production variant (minified)
+  config.react.variant = :production
+  config.react.addons  = true
+
+  config.action_mailer.default_url_options = { host: Settings.platform_host, port: 3000 }
 end

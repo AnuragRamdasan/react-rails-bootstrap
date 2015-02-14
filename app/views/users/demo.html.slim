@@ -1,0 +1,7 @@
+<h1>/app/views/pages/index.html.erb</h1>
+= react_component 'DemoComponent', {}
+.jquery
+
+- content_for :js do
+  javascript:
+    $('.jquery').text('demo jquery');
